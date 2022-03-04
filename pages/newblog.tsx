@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { ChangeEvent, FormEvent, Fragment, useEffect, useState } from 'react';
-import XIcno from '../icons/XIcno';
+import { XIcon } from '@heroicons/react/solid';
 import classes from '../styles/Home.module.css';
 export interface blogdetail {
     blogHeader: string,
@@ -24,6 +24,7 @@ export default function NewBlog() {
 
     const handleBlogSubmit = (e: FormEvent) => {
         e.preventDefault();
+        // fetch()
     }
     return (
         <Fragment>
@@ -63,7 +64,7 @@ export default function NewBlog() {
                         {
                             tempUrl &&
                             <div className={classes.imgt}>
-                                <button onClick={() => { setFile(null); setTempUrl("") }} className={classes.xIcon}><XIcno /></button>
+                                <button onClick={() => { setFile(null); setTempUrl("") }} className={classes.xIcon}><XIcon /></button>
                                 <Image src={tempUrl} width={700} height={600} alt='tempimageurl' objectFit='cover' className={classes.tempblog} />
                             </div>
                         }

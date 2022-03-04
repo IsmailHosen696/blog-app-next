@@ -148,6 +148,7 @@
   border: none;
   background: none;
   position: absolute;
+  cursor: pointer;
   right: 1.5rem;
   z-index: 10;
   background: rgb(226, 226, 226);
@@ -168,4 +169,85 @@
 .xicon {
   height: 1.5rem;
   width: 1.5rem;
+}
+.signindiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+.signinContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.signinContainer > h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  text-align: center;
+}
+.signinForm {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.signininput {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.signininput > label {
+  padding: 1rem 0;
+}
+.signininput > input {
+  border-radius: 5px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 0.7rem 1rem;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+.signinbtn {
+  width: 7rem;
+  height: 2.5rem;
+  border: none;
+  background-color: rgb(19, 192, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  float: right;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.authlinks {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.authlinks a:hover {
+  text-decoration: underline;
+  transition: 0.5s all ease-in-out;
+}
+.errormsg {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: rgba(250, 39, 39, 0.541);
+}
+.closeerror {
+  width: 1.5rem;
+  cursor: pointer;
 }
